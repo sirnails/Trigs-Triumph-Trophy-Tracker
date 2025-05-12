@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management - Trigs Triumph Trophy Tracker</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/theme-toggle.css">
+</head>
+<body>
+    <div class="container user-management-page">
+        <header>
+            <h1>User Management</h1>
+            <span class="header-title"><a href="/" class="nav-link header-link">Back to Home</a></span>
+        </header>
+
+        <nav>
+            <button id="login-btn">Login</button>
+            <button id="register-btn">Register</button>
+            <div id="user-info" class="user-info-container" style="display:none;">
+                <span class="user-info-text">Logged in as <strong id="username-display"></strong></span>
+                <span class="user-info-logout">Log out</span>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <img src="/static/images/moon.svg" alt="Toggle dark mode" class="theme-icon light-mode-icon">
+                <img src="/static/images/sun.svg" alt="Toggle light mode" class="theme-icon dark-mode-icon">
+            </button>
+        </nav>
+        
+        <div class="main-content full-width">
+            <section id="users-section">
+                <header>
+                    <h2>Manage Users</h2>
+                    <div class="admin-notice">Administrator access only</div>
+                </header>
+                
+                <table class="users-table">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Display Name</th>
+                            <th>Role</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="users-list">
+                        <!-- Users will be dynamically loaded here -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <form id="login-form" class="modal-content">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username" autocomplete="username" required>
+            <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" required>
+            <button type="submit">Login</button>
+            <button type="button" class="close-modal">Cancel</button>
+        </form>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal">
+        <form id="register-form" class="modal-content">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Username" autocomplete="username" required>
+            <input type="password" id="register-password" placeholder="Password" autocomplete="new-password" required>
+            <input type="password" id="register-confirm-password" placeholder="Confirm Password" autocomplete="new-password" required>
+            <button type="submit">Register</button>
+            <button type="button" class="close-modal">Cancel</button>
+        </form>
+    </div>
+
+    <!-- Reset Password Modal -->
+    <div id="reset-password-modal" class="modal">
+        <form id="reset-password-form" class="modal-content">
+            <h2>Reset User Password</h2>
+            <p id="reset-password-username"></p>
+            <input type="hidden" id="reset-password-user-id">
+            <input type="password" id="new-password" placeholder="New Password" required>
+            <input type="password" id="confirm-new-password" placeholder="Confirm New Password" required>
+            <button type="submit">Reset Password</button>
+            <button type="button" class="close-modal">Cancel</button>
+        </form>
+    </div>
+
+    <script src="/static/js/user-management.js"></script>
+</body>
+</html>

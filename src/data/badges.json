@@ -1,0 +1,20 @@
+[
+  {
+    "id": "b20e28ab-b295-4a98-b089-9e7f5a94958d",
+    "name": "First FPGA Design done",
+    "description": "Completed first FPGA design project",
+    "icon": "chip.svg"
+  },
+  {
+    "name": "Chess player",
+    "description": "joined chess club",
+    "icon": "badge_1746959527227_DALL·E_2024-09-14_11.38.10_-_A_very_dark_and_plain_chess-themed_background_for_a_workplace_setting._The_design_should_have_no_contrasting_elements,_using_deep_black_and_very_subtl.webp",
+    "id": "96d097cc-4b4e-49d1-b92a-c005dd4fefec"
+  },
+  {
+    "name": "Master Architect",
+    "description": "Outstanding FPGA design innovations",
+    "icon": "badge_1747069908732_Generate_a_picture_of_a_badge_award_for__Master_Architect_–_For_outstanding_FPGA_design_innovations._.png",
+    "id": "12265e88-fbfd-442f-83fa-f4baae0d4edf"
+  }
+]

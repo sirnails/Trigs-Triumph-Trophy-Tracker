@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge Details - Trigs Triumph Trophy Tracker</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/theme-toggle.css">
+    <link rel="stylesheet" href="/static/css/badge-details.css">
+</head>
+<body>
+    <div class="container badge-details-page">
+        <header>
+            <h1>Trigs Triumph Trophy Tracker</h1>
+            <span class="header-title"><a href="javascript:history.back()" class="nav-link header-link">Back</a>
+            </span>
+        </header>
+
+        <nav>
+            <button id="login-btn">Login</button>
+            <button id="register-btn">Register</button>
+            <div id="user-info" class="user-info-container" style="display:none;">
+                <span class="user-info-text">Logged in as <strong id="username-display"></strong></span>
+                <span class="user-info-logout">Log out</span>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <img src="/static/images/moon.svg" alt="Toggle dark mode" class="theme-icon light-mode-icon">
+                <img src="/static/images/sun.svg" alt="Toggle light mode" class="theme-icon dark-mode-icon">
+            </button>
+        </nav>
+        
+        <div class="main-content full-width">
+            <section id="badge-details">
+                <header>
+                    <h2 id="badge-title">Badge Details</h2>
+                    <div class="badge-actions">
+                        <button id="award-badge-btn" class="action-btn primary-btn">Award Badge</button>
+                        <button id="edit-badge-btn" class="action-btn">Edit Badge</button>
+                    </div>
+                </header>
+                
+                <div class="badge-info-container">
+                    <div class="badge-info-card">
+                        <div id="badge-image" class="badge-detail-image"></div>
+                        <div class="badge-info">
+                            <h3 id="badge-name"></h3>
+                            <p id="badge-description"></p>
+                            <p class="badge-stat">Total Awards: <span id="badge-count">0</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="badge-users-container">
+                    <h3>Users with this Badge</h3>
+                    <div id="badge-users" class="user-list">
+                        <!-- Users will be dynamically inserted here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="login-modal" class="modal">
+        <form id="login-form" class="modal-content">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username" autocomplete="username" required>
+            <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" required>
+            <button type="submit">Login</button>
+            <button type="button" class="close-modal">Cancel</button>
+        </form>
+    </div>
+
+    <div id="register-modal" class="modal">
+        <form id="register-form" class="modal-content">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Username" autocomplete="username" required>
+            <input type="password" id="register-password" placeholder="Password" autocomplete="new-password" required>
+            <input type="password" id="register-confirm-password" placeholder="Confirm Password" autocomplete="new-password" required>
+            <button type="submit">Register</button>
+            <button type="button" class="close-modal">Cancel</button>
+        </form>
+    </div>
+    
+    <div id="award-badge-modal" class="modal">
+        <div class="modal-content">
+            <h2>Award Badge</h2>
+            <p>Select a user to award this badge to:</p>
+            <select id="award-user-select">
+                <option value="">Select User</option>
+                <!-- User options will be loaded dynamically -->
+            </select>
+            <div class="modal-actions">
+                <button id="confirm-award-badge" class="primary-btn">Award Badge</button>
+                <button type="button" class="close-modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/badge-details.js"></script>
+</body>
+</html>

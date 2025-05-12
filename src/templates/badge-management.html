@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge Management - Trigs Triumph Trophy Tracker</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/theme-toggle.css">
+    <link rel="stylesheet" href="/static/css/badge-details.css">
+</head>
+<body>
+    <div class="container badge-management-page">
+        <header>
+            <h1>Trigs Triumph Trophy Tracker</h1>
+            <span class="header-title"><a href="javascript:history.back()" class="nav-link header-link">Back</a>
+            </span>
+        </header>
+
+        <nav>
+            <button id="login-btn">Login</button>
+            <button id="register-btn">Register</button>
+            <div id="user-info" class="user-info-container" style="display:none;">
+                <span class="user-info-text">Logged in as <strong id="username-display"></strong></span>
+                <span class="user-info-logout">Log out</span>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <img src="/static/images/moon.svg" alt="Toggle dark mode" class="theme-icon light-mode-icon">
+                <img src="/static/images/sun.svg" alt="Toggle light mode" class="theme-icon dark-mode-icon">
+            </button>
+        </nav>
+        
+        <div class="main-content full-width">
+            <section id="badge-management">
+                <header>
+                    <h2>Badge Management</h2>
+                    <button id="create-badge-btn">Create New Badge</button>
+                </header>
+                <table id="badge-table" class="badge-table">
+                    <thead>
+                        <tr>
+                            <th class="badge-image-col">Badge</th>
+                            <th class="badge-info-col">Information</th>
+                            <th class="badge-count-col">Users</th>
+                            <th class="badge-actions-col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="badge-list">
+                        <!-- Badges will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <div id="login-modal" class="modal">
+            <form id="login-form" class="modal-content">
+                <h2>Login</h2>
+                <input type="text" id="login-username" placeholder="Username" autocomplete="username" required>
+                <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" required>
+                <button type="submit">Login</button>
+                <button type="button" class="close-modal">Cancel</button>
+            </form>
+        </div>
+
+        <div id="register-modal" class="modal">
+            <form id="register-form" class="modal-content">
+                <h2>Register</h2>
+                <input type="text" id="register-username" placeholder="Username" autocomplete="username" required>
+                <input type="password" id="register-password" placeholder="Password" autocomplete="new-password" required>
+                <input type="password" id="register-confirm-password" placeholder="Confirm Password" autocomplete="new-password" required>
+                <button type="submit">Register</button>
+                <button type="button" class="close-modal">Cancel</button>
+            </form>
+        </div>
+
+        <div id="create-badge-modal" class="modal">
+            <form id="create-badge-form" class="modal-content">
+                <h2>Create New Badge</h2>
+                <div class="badge-upload-preview" id="create-badge-preview">
+                    <span>Badge Image</span>
+                </div>
+                <div class="file-input-container">
+                    <label for="create-badge-image">Choose Image</label>
+                    <input type="file" id="create-badge-image" accept="image/*">
+                    <input type="hidden" id="create-badge-icon-name">
+                </div>
+                <input type="text" id="badge-name" placeholder="Badge Name" maxlength="60" required>
+                <textarea id="badge-description" placeholder="Badge Description" required></textarea>
+                <button type="submit">Create Badge</button>
+                <button type="button" class="close-modal">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

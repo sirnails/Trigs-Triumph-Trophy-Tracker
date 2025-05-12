@@ -1,0 +1,55 @@
+/* Theme Toggle Styles */
+.theme-toggle {
+    background-color: transparent;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Different button styling for dark mode */
+html[data-theme="dark"] .theme-toggle {
+    background-color: rgba(255, 255, 255, 0.527);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.theme-toggle:hover {
+    background-color: var(--bg-tertiary);
+}
+
+html[data-theme="dark"] .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    transition: opacity 0.2s ease;
+}
+
+/* Show moon icon in light mode */
+html[data-theme="light"] .light-mode-icon {
+    opacity: 1;
+}
+
+html[data-theme="light"] .dark-mode-icon {
+    opacity: 0;
+}
+
+/* Show sun icon in dark mode */
+html[data-theme="dark"] .light-mode-icon {
+    opacity: 0;
+}
+
+html[data-theme="dark"] .dark-mode-icon {
+    opacity: 1;
+}

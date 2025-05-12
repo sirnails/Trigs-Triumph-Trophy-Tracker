@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Star</title>
+    <g id="Star" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Background" fill="#FFC107" cx="100" cy="100" r="100"></circle>
+        <path d="M100,20 L120.61,63.9 L168.78,70.9 L134.39,105.1 L142.71,153.1 L100,130.5 L57.29,153.1 L65.61,105.1 L31.22,70.9 L79.39,63.9 Z" id="Star-Shape" fill="#FFFFFF" stroke="#FFA000" stroke-width="6"></path>
+    </g>
+</svg>

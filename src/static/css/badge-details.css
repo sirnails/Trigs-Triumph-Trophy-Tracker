@@ -1,0 +1,131 @@
+.badge-info-container {
+    margin-bottom: 30px;
+}
+
+.badge-info-card {
+    display: flex;
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    padding: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.badge-detail-image {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-tertiary);
+    border-radius: var(--border-radius);
+    margin-right: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.badge-detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-info {
+    flex-grow: 1;
+}
+
+.badge-info h3 {
+    color: var(--accent-color);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.badge-info p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.badge-stat {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.badge-users-container {
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    padding: 20px;
+}
+
+.badge-users-container h3 {
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.user-item {
+    background-color: var(--bg-tertiary);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.user-name {
+    font-weight: 600;
+}
+
+.badge-count {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    z-index: 5;
+}
+
+.badge-count-bottom {
+    top: auto;
+    bottom: 15px;
+    right: 15px;
+}
+
+.badge-card {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.badge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}

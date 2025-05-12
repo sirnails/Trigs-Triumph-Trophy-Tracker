@@ -1,0 +1,58 @@
+[
+  {
+    "id": "07f6fc2a-30a1-41db-861b-8e7b7c56b4b6",
+    "username": "admin",
+    "password": "$pbkdf2-sha256$29000$PscYw1gr5ZzTWoux9h6jNA$vlp0cJdSu3yZ8wfPB3HYZl1Nx3XEwmhp8KBZabNFw6U",
+    "role": "admin",
+    "display_name": "Administrator",
+    "email": "admin@fpgabadges.com"
+  },
+  {
+    "id": "b16964b2-4262-49e6-beec-1a377b6ee0a3",
+    "username": "dave",
+    "password": "$pbkdf2-sha256$29000$klKKcc55z1nr/X8PYYzRGg$4FHYllcf6Vmwm1z4j9j.I.15HAPxDNIEzU9ZsZCcLjQ",
+    "email": "",
+    "display_name": "",
+    "role": "user"
+  },
+  {
+    "id": "81d83a64-cf8d-4b2e-ab5c-2ad5a8c4c649",
+    "username": "asdfasdf",
+    "password": "$pbkdf2-sha256$29000$7J2zNibEWEupVSpFyPl/bw$/OLjn2LcQn4QMAbPBhM6VVyW7.972B0xvWDkFX2.MV4",
+    "email": "",
+    "display_name": "",
+    "role": "user"
+  },
+  {
+    "id": "cf2a1f5f-bef3-4806-a6d1-11ea25430d63",
+    "username": "Bob",
+    "password": "$pbkdf2-sha256$29000$vBdCqFXKeS8FgPD.H2OsdQ$7VSFk75S/NevUSSkzV0HUdKd3ForWajUiv7DopAFTzE",
+    "email": "",
+    "display_name": "",
+    "role": "user"
+  },
+  {
+    "id": "d46a578e-ebc0-4941-a462-b8ddb0147b30",
+    "username": "Mary",
+    "password": "$pbkdf2-sha256$29000$SsmZU6r1/r/Xem/NeQ/hPA$VhPKm2Sf4/p1P2TXHFJFAbAAvGcEscaSG6G/LgC/ynM",
+    "email": "",
+    "display_name": "",
+    "role": "user"
+  },
+  {
+    "id": "6df8a5b8-e917-43eb-bee9-c5e2c74b2594",
+    "username": "Andy",
+    "password": "$pbkdf2-sha256$29000$UkoJoXSOsda69743ZozReg$HKqoZHoNzOpRpEdAx4UCEbm005z0omTnXq7RRdKEBHM",
+    "email": "",
+    "display_name": "",
+    "role": "user"
+  },
+  {
+    "id": "9da31265-1c93-4f3c-9236-ac5532b781b8",
+    "username": "Sarah",
+    "password": "$pbkdf2-sha256$29000$qxWi1Po/xzgnhNAaIyTkfA$SuHl.hxgnrAYQcKqCSmUl69CLQr5aAhFo5me4p3v/Og",
+    "email": "",
+    "display_name": "",
+    "role": "user"
+  }
+]
