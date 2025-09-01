@@ -29,12 +29,14 @@ class DataManager:
                     json.dump([], f)
 
     async def read_json(self, file_path):
-        async with aiofiles.open(file_path, mode='r') as f:
+        async with aiofiles.open(
+            file_path, mode='r', encoding='utf-8', errors='ignore'
+        ) as f:
             content = await f.read()
             return json.loads(content) if content else []
 
     async def write_json(self, file_path, data):
-        async with aiofiles.open(file_path, mode='w') as f:
+        async with aiofiles.open(file_path, mode='w', encoding='utf-8') as f:
             await f.write(json.dumps(data, indent=2, ensure_ascii=False))
         return True
 
